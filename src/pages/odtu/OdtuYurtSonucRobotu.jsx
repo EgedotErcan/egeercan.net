@@ -65,12 +65,12 @@ Hey, welcome to this website.<br/>By entering your dormitory score,<br/> you can
               className='input'
               min={1}
               max={200}
-              placeholder='Enter your dormitory score here...'
+              placeholder='Enter your dormitory score'
               required
             />
             <button className='bar_card bar_card_1' type='submit'>submit</button>
             <div className='user_output'>{ userOutput } </div>
-            <div className='warning'>All the data used was obtained from sonuc-aciklama.metu.edu.tr</div>
+            <div className='warning'>All the data used was obtained from sonuc-aciklama.metu.edu.tr </div>
         </form>
 
         </>

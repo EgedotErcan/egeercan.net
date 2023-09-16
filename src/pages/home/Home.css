@@ -282,12 +282,32 @@ h2,p{
 
 }
 
-@media only screen and (950px < width <= 1024px) {
+@media only screen and (600px < width <= 1440px) {
     .prompt {
         padding: 0 0;
     }
+    .input, .gender {
+        width: 50%;
+    }
+
+}
+@media only screen and (300px < width <= 600px) {
+
+    .input, .gender {
+        width: 100%;
+        font-size: 18px ;
+    }
+
 }
 
+@media only screen and (1px < width <= 300px) {
+
+    .input, .gender {
+        width: 100%;
+        font-size: 12px ;
+    }
+
+}
 
 @media only screen and (min-width: 1280px) {
     .navbar {
