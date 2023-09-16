@@ -2,8 +2,6 @@ import React, {  useState} from 'react';
 
 
 import {odtuErkekler,odtuKizlar}from 'assets/odtu.jsx';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { monoBlue } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const OdtuYurtSonucRobotu = () => {
   const [userOutput, setUserOutput] = useState('');
