@@ -1,4 +1,4 @@
-import React, { useEffect , useState} from 'react';
+import React, {  useState} from 'react';
 
 
 import {odtuErkekler,odtuKizlar}from 'assets/odtu.jsx';
@@ -16,7 +16,7 @@ const OdtuYurtSonucRobotu = () => {
 
   const extractInfo = (point) => {
       const tempElement = document.createElement('div');
-      tempElement.innerHTML = userGender == 'female' ? odtuKizlar : odtuErkekler;
+      tempElement.innerHTML = userGender === 'female' ? odtuKizlar : odtuErkekler;
       console.log(tempElement)
 
       // Access and manipulate the DOM within the temporary element
@@ -34,7 +34,7 @@ const OdtuYurtSonucRobotu = () => {
       }
       const erkekCikan = 317
       const kizCikan = 208
-      let x = totalCount - (userGender == 'female' ? kizCikan : erkekCikan);
+      let x = totalCount - (userGender === 'female' ? kizCikan : erkekCikan);
       if (x <= 0) {
         x = "You already have a dormitory in METU!"
         return x
@@ -53,7 +53,7 @@ const OdtuYurtSonucRobotu = () => {
         <>
         <form onSubmit={handleInput} className='form-container'>
             
-            <img className='metu_img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_of_METU.svg/942px-Logo_of_METU.svg.png' width={100} height={100}></img>
+            <img alt='metu logo' className='metu_img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_of_METU.svg/942px-Logo_of_METU.svg.png' width={100} height={100}></img>
             <div className='intro_message'>
 Hey, welcome to this website.<br/>By entering your dormitory score,<br/> you can see how many people are ahead of you <br/>on the METU 2023 dormitory results list. </div>
 
