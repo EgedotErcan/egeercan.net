@@ -33,6 +33,7 @@ const OdtuYurtSonucRobotu = () => {
       const erkekCikan = 317
       const kizCikan = 208
       let x = totalCount - (userGender === 'female' ? kizCikan : erkekCikan);
+      
       if (x <= 0) {
         x = "You already have a dormitory in METU!"
         return x
