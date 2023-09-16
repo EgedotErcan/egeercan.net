@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/learning" element={<Learning />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
-        <Route path="/odtu-yurt-sonuc-robotu" element={< OdtuYurtSonucRobotu />} />
+        <Route path="/metu-dormitory-result-robot" element={< OdtuYurtSonucRobotu />} />
       </Routes>
   );
 };
