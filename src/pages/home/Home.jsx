@@ -17,7 +17,7 @@ const Home = () => {
       <div className='panel'>
 
         <div className="image_container">
-          <img alt='Ege Ercan' src={ProfilePhoto} className='avatar'></img>
+          <img alt='Ege Ercan' src={ProfilePhoto} width="420px" height="420px"className='avatar'></img>
         </div>
 
         <div className='intro_container'>
