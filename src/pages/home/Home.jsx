@@ -5,6 +5,7 @@ import LinkedinLogo from 'assets/linkedin.svg';
 import TwitterLogo from 'assets/twitter.svg';
 import InstagramLogo from 'assets/instagram.svg';
 import SpotifyLogo from 'assets/spotify.svg';
+import ProfilePhoto from 'assets/pp.png';
 import Typewriter from 'react-ts-typewriter';
 import CodeEditor from 'pages/home/CodeEditor';
 import Navbar from 'pages/home/Navbar';
@@ -16,7 +17,7 @@ const Home = () => {
       <div className='panel'>
 
         <div className="image_container">
-          <img alt='avatar' src='https://avatars.githubusercontent.com/u/79145337?v=4' className='avatar'></img>
+          <img alt='Ege Ercan' src={ProfilePhoto} className='avatar'></img>
         </div>
 
         <div className='intro_container'>
